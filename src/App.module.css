@@ -1,3 +1,31 @@
 .hero{
    text-align: center;
+   position: relative;
+}
+
+.hero div{
+    position: absolute;
+    left: calc(50% - 368px/2 - 0px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6875rem;
+    bottom: 2.375rem;
+}
+
+.hero h1, .hero h2{
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.hero h1{
+    margin: 0;
+font-size: 2.25rem;
+color: #FFFFFF;
+}
+
+.hero h2{
+    margin: 0;
+    font-size: 1.75rem;
+    color: #858479;
 }
