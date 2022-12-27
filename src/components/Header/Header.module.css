@@ -1,0 +1,18 @@
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr; 
+align-items: center;
+justify-content: center;
+max-height: 2.5rem;
+margin: 0 9.5rem;
+}
+
+.container div {
+text-align: end;
+}
+
+.navegation ul{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
