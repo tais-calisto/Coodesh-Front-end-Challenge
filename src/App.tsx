@@ -2,6 +2,7 @@ import Header from './components/Header';
 import iconModule from './assets/iconModule.svg';
 import iconHour from './assets/iconHour.svg';
 import style from './App.module.css';
+import Slides from './components/Slides';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </div>
         <button>Mas información</button>
       </section>
+      <Slides />
     </>
   );
 }
