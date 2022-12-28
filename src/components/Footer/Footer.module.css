@@ -1,0 +1,27 @@
+.socialLinks{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    border-bottom: 1px solid #858479;
+}
+
+.siteLinks{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 1.5rem 0;
+}
+
+.siteLinks li{
+    color: #858479;
+    list-style: none;
+    font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+}

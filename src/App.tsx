@@ -10,6 +10,7 @@ import Infos from './components/Infos';
 import Comments from './components/Comments';
 import Articles from './components/Articles';
 import Blog from './components/Blog';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       <Comments />
       <Articles />
       <Blog />
+      <Footer />
     </>
   );
 }
