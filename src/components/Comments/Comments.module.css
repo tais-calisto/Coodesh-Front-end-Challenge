@@ -1,0 +1,134 @@
+.container{
+    margin: 0 9.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.total{
+    display: flex;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.total strong{
+    font-weight: 400;
+    color: #C5AF19;
+}
+
+.total p{
+    color: #858479;
+}
+
+.commentContainer{
+display: flex;
+align-items: center;
+gap: 1rem;
+border-bottom: 1px solid #858479;
+padding-bottom: 1.5rem;
+}
+
+.commentContainer:last-child{
+    border-bottom: none;
+}
+
+.profile{
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile p{
+    color: #000000;
+    background: #858479;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+}
+
+.comment h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: #D8D7CE;
+    text-transform: uppercase;
+}
+
+.commentAuthor{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-top: 1.5rem;
+}
+
+.commentTime{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.commentTime p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #858479;
+}
+
+.commentContent {
+    font-size: 1rem;
+    color: #D8D7CE;
+    line-height: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.response, .responseAuthor{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #858479;
+}
+
+.response{
+    border-top: 1px solid rgba(133,132,121,0.5);
+    padding-top: 0.6875rem;
+}
+
+.team{
+    font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #C5AF19;
+}
+
+.responseAuthorContainer{
+display: flex;
+align-items: center;
+gap:0.25rem;
+padding-top: 0.5rem;
+}
+
+.author{
+    color: #F2ECC9;
+    font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+}
+
+.position{
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C5AF19;
+}
+
+.btn{
+    text-align: center;
+}
+
+button{
+    width: 20%;
+}

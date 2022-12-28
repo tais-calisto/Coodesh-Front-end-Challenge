@@ -7,6 +7,7 @@ import { content } from './utils/content';
 import LessonPlan from './components/LessonPlan';
 import Courses from './components/Courses';
 import Infos from './components/Infos';
+import Comments from './components/Comments';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
       <LessonPlan />
       <Courses />
       <Infos />
+      <Comments />
     </>
   );
 }
