@@ -4,6 +4,7 @@ import iconHour from './assets/iconHour.svg';
 import style from './App.module.css';
 import Slider from './components/Slider';
 import { content } from './utils/content';
+import LessonPlan from './components/LessonPlan';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         </ul>
         <button>Mas información</button>
       </section>
-      <section className={style.plan}></section>
+      <LessonPlan />
     </>
   );
 }
