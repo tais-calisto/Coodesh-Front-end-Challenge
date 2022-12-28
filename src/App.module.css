@@ -75,3 +75,9 @@ color: #999999
 .content button{
     width: 40%;
 }
+
+/* Gerais */
+
+:global(.container) {
+  margin: 0 9.5rem
+}
