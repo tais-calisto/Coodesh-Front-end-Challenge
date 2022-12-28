@@ -3,6 +3,7 @@ import iconModule from './assets/iconModule.svg';
 import iconHour from './assets/iconHour.svg';
 import style from './App.module.css';
 import Slider from './components/Slider';
+import { content } from './utils/content';
 
 function App() {
   return (
@@ -28,7 +29,19 @@ function App() {
         <button>Mas información</button>
       </section>
       <Slider />
-      <h2>Contenido exclusivo</h2>
+      <section className={style.content}>
+        <h2>Contenido exclusivo</h2>
+        <ul>
+          {content.map((c) => (
+            <li key={c._id}>
+              <img src={c.image} alt=''></img>
+              <p>{c.text}</p>
+            </li>
+          ))}
+        </ul>
+        <button>Mas información</button>
+      </section>
+      <section className={style.plan}></section>
     </>
   );
 }
