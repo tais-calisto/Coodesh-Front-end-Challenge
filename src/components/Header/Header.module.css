@@ -73,7 +73,7 @@ text-align: end;
     padding-bottom: 0.75rem;
 }
 
-.dropdownItems li{
+.dropdownItems li {
     list-style: none;
     text-align: end;
     font-weight: 700;
@@ -92,4 +92,117 @@ text-align: end;
     color:#C5AF19;
 }
 
+.menuMobile, .dropdownMobile{
+    display: none;
+}
 
+
+@media screen and (max-width: 520px){
+    .container{
+        margin: 0 0.5rem;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .menuMobile{
+        display:block;
+        text-align: end;
+        cursor: pointer;
+    }
+
+    .navegation{
+        display: none;
+    }
+
+    .dropdownItems{
+       display: none;
+    }
+
+    .dropdownMobile{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        background-color: #000000;
+    }
+
+    .dropdowOut{
+        background: #000000;
+    }
+
+    .dropdownContent{
+        background-color:  #FFFFFF;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .dropdownSaudation{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom:  1px solid #D8D7CE;;
+    }
+
+    .dropdownHello{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdownHello h2{
+        font-weight: 400;
+        font-size: 1rem;
+        color: #858479;
+    }
+
+    .dropdownHello strong{
+        color: #000000;
+    }
+
+    .dropdownNav, .logout p{
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        list-style: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #858479;
+    cursor: pointer;
+    padding-bottom: 4rem;
+    }
+
+    .dropdownNav li:nth-child(2){
+        color:#C5AF19;
+    }
+
+    .contact{
+        padding: 1rem 0;
+        border-top:  1px solid #F2ECC9;
+        border-bottom:  1px solid #F2ECC9;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #1D1A05;
+    }
+
+    .phoneNumber{
+        display: flex;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .phoneNumber p{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #858479
+    }
+    
+
+}
