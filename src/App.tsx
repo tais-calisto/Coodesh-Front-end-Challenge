@@ -2,7 +2,7 @@ import Header from './components/Header';
 import iconModule from './assets/iconModule.svg';
 import iconHour from './assets/iconHour.svg';
 import style from './App.module.css';
-import Slides from './components/Slides';
+import Slider from './components/Slider';
 
 function App() {
   return (
@@ -27,7 +27,8 @@ function App() {
         </div>
         <button>Mas información</button>
       </section>
-      <Slides />
+      <Slider />
+      <h2>Contenido exclusivo</h2>
     </>
   );
 }
