@@ -1,0 +1,98 @@
+.container{
+    margin: 0 9.5rem;
+}
+.container h2{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+.form{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name email" "country phone" "condicions comunications" "btn btn";
+}
+
+.form label{
+    font-size: 0.875rem;
+    color: #858479;
+}
+
+.form input, .form select{
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    padding: 0.625rem 1rem;
+    border: none;
+}
+
+.form input[type=checkbox] {
+    appearance: none;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+  place-content: center;
+  padding: 0;
+}
+
+.form input[type="checkbox"]:checked{
+   background-color: #C5AF19;
+}
+
+.form input[type="checkbox"]::before{
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    box-shadow: inset 1em 1em #FFFFFF;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.form input::placeholder{
+    color: #D8D7CE;
+    text-transform: uppercase;    
+}
+
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+}
+.country{
+    grid-area: country;
+}
+.phone{
+    grid-area: phone;
+}
+.condicions{
+    grid-area: condicions;
+}
+.comunications{
+    grid-area: comunications;
+}
+.btn{
+    grid-area: btn;
+   text-align: center;
+}
+
+button{
+    width: 60%;
+}
+
+.condicions, .comunications{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form a{
+    text-transform: lowercase;
+    font-weight: 400;
+    color: #D8D7CE;
+}

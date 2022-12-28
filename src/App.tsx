@@ -6,6 +6,7 @@ import Slider from './components/Slider';
 import { content } from './utils/content';
 import LessonPlan from './components/LessonPlan';
 import Courses from './components/Courses';
+import Infos from './components/Infos';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       </section>
       <LessonPlan />
       <Courses />
+      <Infos />
     </>
   );
 }
