@@ -9,6 +9,7 @@ import Courses from './components/Courses';
 import Infos from './components/Infos';
 import Comments from './components/Comments';
 import Articles from './components/Articles';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       <Infos />
       <Comments />
       <Articles />
+      <Blog />
     </>
   );
 }
