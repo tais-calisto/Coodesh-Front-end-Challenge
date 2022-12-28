@@ -1,0 +1,41 @@
+.hero{
+    text-align: center;
+    position: relative;
+    background-image: url("../../assets/hero.svg");
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 1136px;
+    margin: auto;
+ }
+ 
+ .hero div{
+     position: absolute;
+     left: calc(50% - 368px/2 - 0px);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 11px;
+     bottom: 0px;
+ }
+ 
+ .hero h1, .hero h2, .hero strong{
+ font-weight: 400;
+ text-transform: uppercase;
+ }
+ 
+ .hero h1{
+     margin: 0;
+ font-size: 2.25rem;
+ color: #FFFFFF;
+ }
+ 
+ .hero h2{
+     margin: 0;
+     font-size: 1.75rem;
+     color: #858479;
+ }
+ 
+ .hero strong{
+ color: #999999
+ }
+ 
