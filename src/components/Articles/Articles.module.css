@@ -46,11 +46,6 @@ line-height: 13px;text-transform: uppercase;color: #858479;
 
 .btn{
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-}
-
-button{
-
+    margin: 1rem  auto 3rem;
     width: 50%;
 }

@@ -127,8 +127,6 @@ color: #C5AF19;
 
 .btn{
     text-align: center;
-}
-
-button{
+    margin: auto;
     width: 20%;
 }

@@ -91,11 +91,11 @@
 .btn{
     grid-area: btn;
    text-align: center;
+   width: 60%;
+   margin: auto;
 }
 
-button{
-    width: 60%;
-}
+
 
 .condicions, .comunications{
     display: flex;
