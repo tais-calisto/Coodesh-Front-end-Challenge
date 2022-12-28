@@ -1,0 +1,69 @@
+.container{
+    margin: 0 9.5rem
+}
+
+.container h2{
+    padding-top: 3.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.courses{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 1.5rem;
+height: 11.75rem;
+}
+
+.courses li{
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 1px #FFFFFF;
+}
+
+.backdrop{
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+
+
+.courses li:first-child {
+    background-image: url('../../assets/courseMarcus.svg');
+   
+}
+.courses li:nth-child(2){
+    background-image: url('../../assets/courseIsmael.svg');
+  
+}
+.courses li:nth-child(3){
+    background-image: url('../../assets/courseLewis.svg');
+}
+
+.courses h4, .courses p {
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+}
+
+.courses h4{
+    font-weight: 400;
+font-size: 1.25rem;
+color: #FFFFFF;
+
+}
+
+.courses p {
+    color: #858479; 
+    font-size: 1rem;
+}
+
+.courses strong{
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+
+

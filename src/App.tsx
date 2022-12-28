@@ -5,6 +5,7 @@ import style from './App.module.css';
 import Slider from './components/Slider';
 import { content } from './utils/content';
 import LessonPlan from './components/LessonPlan';
+import Courses from './components/Courses';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <button>Mas información</button>
       </section>
       <LessonPlan />
+      <Courses />
     </>
   );
 }
