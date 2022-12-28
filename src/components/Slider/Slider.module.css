@@ -19,12 +19,13 @@ margin-right: 2.5rem;
 }
 
 .featured h2{
-    padding-top: 1.7rem;
+    padding-top: 1rem;
     font-weight: 400;
     font-size: 1.75rem;
     text-transform: uppercase;
     color: #1D1A05;
     margin: 0;
+    text-align: start;
 }
 
 .featured p{
@@ -34,12 +35,17 @@ margin-right: 2.5rem;
 }
 
 .featured ul{
-    margin-top: 2.5rem;
+    margin: 1.5rem 0;
     display: flex;
     padding: 0;
     max-height: 100px;
     max-width: 494px;
     gap: 1.5rem
+}
+
+.options:nth-child(2),
+.options:nth-child(3) {
+    opacity: 0.5;
 }
 
 .options{

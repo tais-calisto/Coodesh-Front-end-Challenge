@@ -51,6 +51,7 @@ color: #999999
     display: flex;
     gap: 1rem;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .content{
