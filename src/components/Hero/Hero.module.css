@@ -6,6 +6,7 @@
     height: 480px;
     width: 1136px;
     margin: auto;
+    z-index: 0;
  }
  
  .hero div{

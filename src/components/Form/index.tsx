@@ -1,4 +1,5 @@
-import style from './Infos.module.css';
+import style from './Form.module.css';
+import iconCaretDown from '../../assets/caretDown.svg';
 
 const Infos = () => {
   return (
@@ -10,11 +11,12 @@ const Infos = () => {
           placeholder='Nombre completo'
           className={style.name}
         />
-        <select className={style.country}>
-          <option value='' disabled selected>
-            PAÍS / CÓDIGO PAÍS
-          </option>
-        </select>
+        <div className={style.select}>
+          <div>
+            <p>país/código país</p>
+          </div>
+          <img src={iconCaretDown}></img>
+        </div>
         <input
           type='email'
           placeholder='Correo eletrónico'

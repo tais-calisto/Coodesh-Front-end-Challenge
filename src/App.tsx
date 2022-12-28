@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import LessonPlan from './components/LessonPlan';
 import Courses from './components/Courses';
-import Infos from './components/Infos';
+import Form from './components/Form';
 import Comments from './components/Comments';
 import Articles from './components/Articles';
 import Blog from './components/Blog';
@@ -21,7 +21,7 @@ function App() {
       <Content />
       <LessonPlan />
       <Courses />
-      <Infos />
+      <Form />
       <Comments />
       <Articles />
       <Blog />
