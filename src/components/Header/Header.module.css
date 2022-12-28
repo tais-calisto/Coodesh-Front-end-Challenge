@@ -17,3 +17,13 @@ text-align: end;
     gap: 2rem;
     justify-content: flex-end;
 }
+
+.dropdown{
+    position: relative;
+}
+
+.dropdwonItems{
+    z-index: 1;
+    position: absolute;
+    background-color: wheat;
+}
