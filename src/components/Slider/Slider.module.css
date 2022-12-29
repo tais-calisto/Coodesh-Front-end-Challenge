@@ -63,3 +63,49 @@ text-align: center;
 text-transform: uppercase;
 color: #1D1A05;
 }
+
+@media screen and (max-width: 520px){
+    .container{
+        margin: 0 0.5rem;
+        max-height: 320px;
+        background: transparent;
+        border-radius: 0;
+        }
+
+    .featured{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .featuredImg{
+        display: none;
+    }
+
+    .featured h2{
+        padding-top: 0;
+        font-size: 1rem;
+        color: #FFFFFF;
+        text-align: center;
+        padding-bottom: 0.75rem;
+    }
+
+    
+    .featured p{
+        padding-top: 0rem;
+        font-size: 0.875rem;
+    }
+
+    .featured ul{
+        width: 450px;
+        gap: 0.5rem;
+    }
+
+    .featured ul li{
+        width: 140px;
+        height: 80px;
+    }
+
+}

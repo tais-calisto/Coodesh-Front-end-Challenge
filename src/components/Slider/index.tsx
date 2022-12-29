@@ -41,7 +41,11 @@ const Slider = () => {
   return (
     <section className={style.container}>
       <div className={style.featured}>
-        <img src={isFeatured.image} alt={isFeatured.title}></img>
+        <img
+          src={isFeatured.image}
+          alt={isFeatured.title}
+          className={style.featuredImg}
+        ></img>
         <div>
           <h2>{isFeatured.title}</h2>
           <p>{isFeatured.description}</p>
