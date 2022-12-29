@@ -16,3 +16,56 @@
 button{
     width: 100%;
 }
+
+.mobileContainer{
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .info{
+        margin: 0 0.3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'modules hours' 'mobile mobile';
+    }
+
+    .info div{
+        flex-direction: column;
+    }
+
+    .info div:first-child{
+        grid-area: modules;
+    }
+
+    .info div:last-child{
+        grid-area: hours;
+    }
+
+    .info img{
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+    }
+
+    .info p{
+        font-size: 0.75rem;
+    }
+
+    .mobileContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 1.5rem;
+        grid-area: mobile;
+    }
+
+    .mobileContainer p{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .btn{
+        display: none;
+    }
+}

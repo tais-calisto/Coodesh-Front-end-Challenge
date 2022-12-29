@@ -13,7 +13,11 @@ const Information = () => {
         <img src={iconHour} alt=''></img>
         <p>+ 3,5 horas</p>
       </div>
-      <button>Mas información</button>
+      <button className={styles.btn}>Mas información</button>
+      <aside className={styles.mobileContainer}>
+        <p>Aprende natación con una campeona olímpica</p>
+        <button className='buttonSecondaryWhite'>Preguntas Frecuentes</button>
+      </aside>
     </section>
   );
 };
