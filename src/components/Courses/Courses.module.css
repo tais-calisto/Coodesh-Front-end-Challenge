@@ -11,7 +11,6 @@
 display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 1.5rem;
-/* height: 11.75rem; */
 }
 
 .courses li{
@@ -54,6 +53,11 @@ color: #FFFFFF;
 .courses strong{
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.courses img{
+    width: 100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 320px) {
