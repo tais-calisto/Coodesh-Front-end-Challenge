@@ -32,3 +32,76 @@ line-height: 16px;
     align-items: center;
     padding: 0 1.5rem;
 }
+
+.mobileTitle, .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .mobileTitle{
+        display: block;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    .mobile button{
+        width: 70%;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .footer h3{
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .socialLinks{
+        border: none;
+    }
+
+    .end img{
+        grid-area: logo;
+        width: 3rem;
+    }
+
+    .end ul{
+        grid-area: list;
+        padding: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .siteLinks li{
+        font-size: 8px;
+    }
+
+    .end div{
+        grid-area: currency;
+        text-align: end;
+    }
+    
+    .end div a{
+        font-size: 8px;
+    }
+
+    .end{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'logo currency' 'list list';
+        gap: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+}

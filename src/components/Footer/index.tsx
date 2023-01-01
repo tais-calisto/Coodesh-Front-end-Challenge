@@ -4,10 +4,12 @@ import iconInstagram from '../../assets/instagram.svg';
 import iconTwitter from '../../assets/twitter.svg';
 import iconYoutube from '../../assets/youtube.svg';
 import unycosLogo from '../../assets/unycos.svg';
+import whatsappIcon from '../../assets/whatsappWhite.svg';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={style.footer}>
+      <h2 className={style.mobileTitle}>únete a la comunidad</h2>
       <ul className={style.socialLinks}>
         <li>
           <img src={iconFacebook}></img>
@@ -22,6 +24,13 @@ const Footer = () => {
           <img src={iconYoutube}></img>
         </li>
       </ul>
+      <div className={style.mobile}>
+        <h3 className={style.mobileTitle}>¿Dudas? Contáctanos por whatsapp</h3>
+        <button className='buttonSecondaryWhite'>
+          <img src={whatsappIcon}></img>
+          +34 653 46 73 60
+        </button>
+      </div>
       <div className={style.end}>
         <img src={unycosLogo}></img>
         <ul className={style.siteLinks}>
