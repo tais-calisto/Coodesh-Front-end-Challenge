@@ -3,6 +3,7 @@ import iconThumbUp from '../../assets/thumbup.svg';
 import { comments } from '../../utils/comments';
 import iconThumbUpGray from '../../assets/thumbUpGray.svg';
 import iconCheckmark from '../../assets/checkmark.svg';
+import React from 'react';
 
 const Comments = () => {
   return (
@@ -17,8 +18,8 @@ const Comments = () => {
       </div>
       <ul>
         {comments.map((c) => (
-          <>
-            <li key={c._id} className={style.commentContainer}>
+          <React.Fragment key={c._id}>
+            <li className={style.commentContainer}>
               {c.profile ? (
                 <img src={c.profile} alt=''></img>
               ) : (
@@ -73,7 +74,7 @@ const Comments = () => {
               <p>{c.comment}</p>
               <h3>{c.name}</h3>
             </div>
-          </>
+          </React.Fragment>
         ))}
       </ul>
       <div className={style.btn}>
