@@ -7,7 +7,7 @@
     gap: 2rem;
     padding-bottom: 1.5rem;
     padding-top: 3rem;
-    border-bottom: 1px solid #858479;
+    border-bottom: 1px solid var(--gray-50);
 }
 
 .siteLinks{
@@ -54,7 +54,7 @@
     .mobileTitle{
         display: block;
         font-size: 1rem;
-        color: #FFFFFF;
+        color: var(--white);
     }
 
     .mobile{
@@ -62,6 +62,7 @@
         flex-direction: column;
         align-items: center;
         gap: 0.7rem;
+        margin: 0 2.5rem;
     }
 
     .mobile button{
