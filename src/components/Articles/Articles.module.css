@@ -49,3 +49,24 @@ line-height: 13px;text-transform: uppercase;color: #858479;
     margin: 1rem  auto 3rem;
     width: 50%;
 }
+
+
+@media screen and (max-width: 320px) {
+    .container{
+        margin: 0 0.5rem;
+    }
+
+    .articlesContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .blog{
+        display: none;
+    }
+}

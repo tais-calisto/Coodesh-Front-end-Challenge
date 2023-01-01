@@ -24,7 +24,6 @@ function App() {
       <Form />
       <Comments />
       <Articles />
-      <Blog />
       <Footer />
     </>
   );
