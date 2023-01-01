@@ -17,57 +17,63 @@ const Comments = () => {
       </div>
       <ul>
         {comments.map((c) => (
-          <li key={c._id} className={style.commentContainer}>
-            {c.profile ? (
-              <img src={c.profile} alt=''></img>
-            ) : (
-              <div className={style.profile}>
-                <p className={style.profile}>{c.initials}</p>
-              </div>
-            )}
-            <div className={style.comment}>
-              <div className={style.commentAuthor}>
-                <h3>{c.name}</h3>
-                <div className={style.commentTime}>
-                  <img src={iconThumbUpGray}></img>
-                  <p> hace {c.time}</p>
+          <>
+            <li key={c._id} className={style.commentContainer}>
+              {c.profile ? (
+                <img src={c.profile} alt=''></img>
+              ) : (
+                <div className={style.profile}>
+                  <p className={style.profile}>{c.initials}</p>
+                </div>
+              )}
+              <div className={style.comment}>
+                <div className={style.commentAuthor}>
+                  <h3>{c.name}</h3>
+                  <div className={style.commentTime}>
+                    <img src={iconThumbUpGray}></img>
+                    <p> hace {c.time}</p>
+                  </div>
+                </div>
+                <div>
+                  <p className={style.commentContent}>{c.comment}</p>
+                  <ul className={style.responseContainer}>
+                    {c.response ? (
+                      <li>
+                        <p className={style.response}>{c.response}</p>
+                        <div className={style.responseAuthorContainer}>
+                          <img src={iconCheckmark}></img>
+                          {c.responseByTeam ? (
+                            <p className={style.responseAuthor}>
+                              <strong className={style.team}>
+                                Equipo Unycos
+                              </strong>{' '}
+                              - hace {c.responseTime}
+                            </p>
+                          ) : (
+                            <p className={style.responseAuthor}>
+                              <strong className={style.author}>
+                                {c.responseBy}
+                              </strong>{' '}
+                              <strong className={style.position}>
+                                • {c.position}
+                              </strong>
+                              - {c.responseTime}
+                            </p>
+                          )}
+                        </div>
+                      </li>
+                    ) : (
+                      <></>
+                    )}
+                  </ul>
                 </div>
               </div>
-              <div>
-                <p className={style.commentContent}>{c.comment}</p>
-                <ul>
-                  {c.response ? (
-                    <li>
-                      <p className={style.response}>{c.response}</p>
-                      <div className={style.responseAuthorContainer}>
-                        <img src={iconCheckmark}></img>
-                        {c.responseByTeam ? (
-                          <p className={style.responseAuthor}>
-                            <strong className={style.team}>
-                              Equipo Unycos
-                            </strong>{' '}
-                            - hace {c.responseTime}
-                          </p>
-                        ) : (
-                          <p className={style.responseAuthor}>
-                            <strong className={style.author}>
-                              {c.responseBy}
-                            </strong>{' '}
-                            <strong className={style.position}>
-                              • {c.position}
-                            </strong>
-                            - {c.responseTime}
-                          </p>
-                        )}
-                      </div>
-                    </li>
-                  ) : (
-                    <></>
-                  )}
-                </ul>
-              </div>
+            </li>
+            <div className={style.mobile}>
+              <p>{c.comment}</p>
+              <h3>{c.name}</h3>
             </div>
-          </li>
+          </>
         ))}
       </ul>
       <div className={style.btn}>

@@ -130,3 +130,61 @@ color: #C5AF19;
     margin: auto;
     width: 20%;
 }
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        margin: 0 0.5rem
+    }
+
+    .container h2{
+        font-size: 1rem;
+    }
+
+    .total{
+        display: none;
+    }
+
+    .commentContainer{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background: #FFFFFF;
+        border-radius: 4px;
+        padding: 0.5rem;
+    }
+    
+    .mobile p, .mobile h3{
+        color: #000000;
+    }
+
+    .container ul{
+        padding-top: 0.5rem;
+        display: flex;
+        gap: 0.5rem ;
+        width: 200%;
+    }
+
+    .mobile p{
+        font-size: 14px;
+    }
+
+    .mobile h3{
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: end;
+        padding-bottom: 0;
+    }
+
+    .btn{
+        display: none;
+    }
+}
