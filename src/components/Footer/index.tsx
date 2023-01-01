@@ -3,6 +3,7 @@ import iconFacebook from '../../assets/facebook.svg';
 import iconInstagram from '../../assets/instagram.svg';
 import iconTwitter from '../../assets/twitter.svg';
 import iconYoutube from '../../assets/youtube.svg';
+import unycosLogo from '../../assets/unycos.svg';
 
 const Footer = () => {
   return (
@@ -21,11 +22,17 @@ const Footer = () => {
           <img src={iconYoutube}></img>
         </li>
       </ul>
-      <ul className={style.siteLinks}>
-        <li>Terminos y condiciones</li>
-        <li>Política de privacidad</li>
-        <li>Aviso legal</li>
-      </ul>
+      <div className={style.end}>
+        <img src={unycosLogo}></img>
+        <ul className={style.siteLinks}>
+          <li>Terminos y condiciones</li>
+          <li>Política de privacidad</li>
+          <li>Aviso legal</li>
+        </ul>
+        <div>
+          <a href=''>USD ($)</a> / <a href=''>EUR (€)</a>
+        </div>
+      </div>
     </footer>
   );
 };
