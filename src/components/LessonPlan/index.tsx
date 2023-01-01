@@ -1,10 +1,12 @@
 import style from './LessonPlan.module.css';
 import { lessonPlan } from '../../utils/lessonPlan';
+import iconChevronRight from '../../assets/chevron-right.svg';
 
 const LessonPlan = () => {
   return (
     <section className={style.container}>
-      <h2>Lesson Plan</h2>
+      <h2 className={style.mobile}>Destaques del curso</h2>
+      <h2 className={style.title}>Lesson Plan</h2>
       <div>
         <ul>
           {lessonPlan.map((lp) => (
@@ -15,6 +17,9 @@ const LessonPlan = () => {
               <div>
                 <h3>{lp.title}</h3>
                 <p>{lp.description}</p>
+                <div className={style.mobileIcon}>
+                  <img src={iconChevronRight}></img>
+                </div>
               </div>
             </li>
           ))}
