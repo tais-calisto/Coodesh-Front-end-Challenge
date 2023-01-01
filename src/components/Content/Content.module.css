@@ -8,8 +8,8 @@
     margin: 2rem 0;
     display: flex;
     gap: 5rem;
-   justify-content: center;
-   text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .content p{
@@ -23,6 +23,7 @@
 @media screen and (max-width: 320px) {
     .content{
         margin: 0 0.5rem;
+        padding: 0;
     }
 
     .content h2, .content button{

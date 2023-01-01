@@ -13,6 +13,10 @@
     text-transform: uppercase;
 }
 
+.info p {
+    font-size: 1.25rem;
+}
+
 button{
     width: 100%;
 }
@@ -24,6 +28,8 @@ button{
 @media screen and (max-width: 320px) {
     .info{
         margin: 0 0.3rem;
+        margin-bottom: 2.25rem;
+        padding: 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 'modules hours' 'mobile mobile';

@@ -11,7 +11,7 @@
 }
 
 .siteLinks{
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem; 
@@ -22,8 +22,8 @@
     color: #858479;
     list-style: none;
     font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+    font-size: 0.875rem;
+    line-height: 16px;
 }
 
 .end{
@@ -40,7 +40,7 @@ line-height: 16px;
 @media screen and (max-width: 320px) {
     .mobileTitle{
         display: block;
-        font-size: 16px;
+        font-size: 1rem;
         color: #FFFFFF;
     }
 
@@ -57,17 +57,19 @@ line-height: 16px;
         gap: 0.5rem;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     
     .footer h3{
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
         text-align: center;
     }
 
     .socialLinks{
         border: none;
+        padding-top: 0.75rem;
+        padding-bottom: 2.5rem;
     }
 
     .end img{
@@ -83,7 +85,7 @@ line-height: 16px;
     }
     
     .siteLinks li{
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     .end div{
@@ -92,7 +94,7 @@ line-height: 16px;
     }
     
     .end div a{
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     .end{
@@ -102,6 +104,6 @@ line-height: 16px;
         grid-template-areas: 'logo currency' 'list list';
         gap: 1rem;
         margin-bottom: 1rem;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
 }

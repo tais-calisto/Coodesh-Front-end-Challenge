@@ -4,7 +4,7 @@ import styles from './Information.module.css';
 
 const Information = () => {
   return (
-    <section className={styles.info}>
+    <div className={styles.info}>
       <div>
         <img src={iconModule} alt=''></img>
         <p>12 módulos</p>
@@ -18,7 +18,7 @@ const Information = () => {
         <p>Aprende natación con una campeona olímpica</p>
         <button className='buttonSecondaryWhite'>Preguntas Frecuentes</button>
       </aside>
-    </section>
+    </div>
   );
 };
 

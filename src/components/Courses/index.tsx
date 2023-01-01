@@ -18,7 +18,6 @@ const Courses = () => {
           </li>
         ))}
       </ul>
-      <></>
     </section>
   );
 };

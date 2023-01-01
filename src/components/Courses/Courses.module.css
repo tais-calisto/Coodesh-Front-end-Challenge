@@ -8,15 +8,15 @@
 }
 
 .courses{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
 }
 
 .courses li{
     opacity: 0.6;
     background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 1px var(--white);
     position: relative;
 }
 
@@ -40,19 +40,18 @@ gap: 1.5rem;
 
 .courses h4{
     font-weight: 400;
-font-size: 1.25rem;
-color: #FFFFFF;
-
+    font-size: 1.25rem;
+    color: var(--white);
 }
 
 .courses p {
-    color: #858479; 
+    color: var(--gray-50); 
     font-size: 1rem;
 }
 
 .courses strong{
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .courses img{
@@ -63,6 +62,10 @@ color: #FFFFFF;
 @media screen and (max-width: 320px) {
     .container{
         margin: 0 0.5rem
+    }
+
+    .container h2{
+        padding-top: 1.75rem;
     }
 
     .courses{

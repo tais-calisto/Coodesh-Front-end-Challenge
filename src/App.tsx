@@ -20,10 +20,6 @@ function App() {
       <Slider />
       <Content />
       <LessonPlan />
-      <Courses />
-      <Form />
-      <Comments />
-      <Articles />
       <Footer />
     </>
   );

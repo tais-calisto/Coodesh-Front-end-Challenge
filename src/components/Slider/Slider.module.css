@@ -1,15 +1,14 @@
 .container{
-margin: 0 9.5rem;
-max-height: 320px;
-background: #FBFAF7;
-border-radius: 4px;
+    margin: 0 9.5rem;
+    background: var(--yellow-5);
+    border-radius: 4px;
 }
 
 .featured{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2.625rem;
-margin-right: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.625rem;
+    margin-right: 2.5rem;
 }
 
 .featured img{
@@ -23,7 +22,7 @@ margin-right: 2.5rem;
     font-weight: 400;
     font-size: 1.75rem;
     text-transform: uppercase;
-    color: #1D1A05;
+    color: var(--gray-100);
     margin: 0;
     text-align: start;
 }
@@ -31,16 +30,15 @@ margin-right: 2.5rem;
 .featured p{
     padding-top: 0.5rem;
     font-size: 1rem;
-    color: #858479;
+    color: var(--gray-50);
 }
 
 .featured ul{
     margin: 1.5rem 0;
     display: flex;
     padding: 0;
-    max-height: 100px;
-    max-width: 494px;
-    gap: 1.5rem
+    gap: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .options:nth-child(2),
@@ -58,10 +56,10 @@ margin-right: 2.5rem;
 
 .options p{
     font-weight: 700;
-font-size: 12px;
-text-align: center;
-text-transform: uppercase;
-color: #1D1A05;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gray-100);
 }
 
 @media screen and (max-width: 520px){
@@ -87,7 +85,7 @@ color: #1D1A05;
     .featured h2{
         padding-top: 0;
         font-size: 1rem;
-        color: #FFFFFF;
+        color: var(--white);
         text-align: center;
         padding-bottom: 0.75rem;
     }
@@ -109,3 +107,4 @@ color: #1D1A05;
     }
 
 }
+

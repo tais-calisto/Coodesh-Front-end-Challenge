@@ -1,5 +1,5 @@
 .header{
-    filter: drop-shadow(0px 2px 8px #000000);
+    filter: drop-shadow(0px 2px 8px var(--black));
     max-height: 2.5rem;
     position: relative;
     z-index: 20;
@@ -17,7 +17,7 @@
 }
 
 .container div {
-text-align: end;
+    text-align: end;
 }
 
 .navegation{
@@ -48,20 +48,19 @@ text-align: end;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #858479;
+    color: var(--gray-50);
 }
 
 .user strong{
-    color: #D8D7CE;
+    color: var(--gray-25);
 }
 
 .dropdownItems{
     position: absolute;
-    background-color: wheat;
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
     border-radius: 0 0 4px 4px;
     padding-right: 2rem;
@@ -79,17 +78,17 @@ text-align: end;
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
-    color: #858479;
+    color: var(--gray-50);
     cursor: pointer;
 }
 
 .dropdownItems li:last-child{
-    border-top: 1px solid #F2ECC9;
+    border-top: 1px solid var(--yellow-20);
     padding-top: 0.75rem;
 }
 
 .dropdownItems li:nth-child(2){
-    color:#C5AF19;
+    color: var(--yellow-100);
 }
 
 .menuMobile, .dropdownMobile{
@@ -120,21 +119,22 @@ text-align: end;
     .dropdownMobile{
         display: grid;
         grid-template-columns: 1fr 4fr;
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         z-index: 100;
         top: 0;
         bottom: 0;
-        background-color: #000000;
+        background-color: var(--black);
+        overflow: hidden;
     }
 
     .dropdowOut{
-        background: #000000;
+        background: var(--black);
     }
 
     .dropdownContent{
-        background-color:  #FFFFFF;
+        background-color:  var(--white);
         padding: 1.5rem 1rem 1rem 1rem;
     }
 
@@ -143,7 +143,7 @@ text-align: end;
         flex-direction: column;
         gap: 2rem;
         padding-bottom: 1.5rem;
-        border-bottom:  1px solid #D8D7CE;;
+        border-bottom:  1px solid var(--gray-25);
     }
 
     .dropdownHello{
@@ -155,11 +155,11 @@ text-align: end;
     .dropdownHello h2{
         font-weight: 400;
         font-size: 1rem;
-        color: #858479;
+        color: var(--gray-50);
     }
 
     .dropdownHello strong{
-        color: #000000;
+        color: var(--black);
     }
 
     .dropdownNav, .logout p{
@@ -168,27 +168,27 @@ text-align: end;
         flex-direction: column;
         gap:1.5rem;
         list-style: none;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #858479;
-    cursor: pointer;
-    padding-bottom: 4rem;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--gray-50);
+        cursor: pointer;
+        padding-bottom: 4rem;
     }
 
     .dropdownNav li:nth-child(2){
-        color:#C5AF19;
+        color: var(--yellow-100);
     }
 
     .contact{
         padding: 1rem 0;
-        border-top:  1px solid #F2ECC9;
-        border-bottom:  1px solid #F2ECC9;
+        border-top:  1px solid var(--yellow-20);
+        border-bottom:  1px solid var(--yellow-20);
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;
         text-transform: uppercase;
-        color: #1D1A05;
+        color: var(--gray-100);
     }
 
     .phoneNumber{
@@ -201,8 +201,6 @@ text-align: end;
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;
-        color: #858479
+        color: var(--gray-50)
     }
-    
-
 }

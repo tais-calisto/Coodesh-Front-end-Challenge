@@ -1,43 +1,32 @@
 .hero{
     text-align: center;
     position: relative;
-    background-image: url("../../assets/hero.svg");
-    background-repeat: no-repeat;
-    height: 480px;
-    width: 1136px;
-    margin: auto;
     z-index: 0;
  }
  
  .hero div{
-     position: absolute;
-     left: calc(50% - 368px/2 - 0px);
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     gap: 11px;
-     bottom: 0px;
+    position: absolute;
+    left: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11px;
+    bottom: 0px;
  }
  
  .content h1, .content h2, .content strong{
- font-weight: 400;
- text-transform: uppercase;
+    font-weight: 400;
+    text-transform: uppercase;
  }
- 
- .content h1{
-     margin: 0;
- font-size: 2.25rem;
- color: #FFFFFF;
- }
+
  
  .content h2{
-     margin: 0;
-     font-size: 1.75rem;
-     color: #858479;
+    margin: 0;
+    color: var(--gray-75);
  }
  
  .content strong{
- color: #999999
+    color: var(--gray-40)
  }
 
  .heroMobile{
@@ -51,7 +40,7 @@
     }
 
     .heroMobile{
-    display: block;
+        display: block;
     }
 
     .heroMobile div{
@@ -62,16 +51,14 @@
     }
 
     .content h1{
-        font-size: 1.75rem;
         text-align: center;
     }
 
     .content h2{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .btn{
         margin: 1rem 0.5rem;
-
     }
 }

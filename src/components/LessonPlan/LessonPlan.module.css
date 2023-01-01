@@ -7,16 +7,16 @@
 }
 
 .container div{
-    background: #F6F4EF;
+    background: var(--yellow-10);
     border-radius: 4px;
 }
 
 .container li{
-display: flex;
-gap: 1rem;
-margin: 0 2rem;
-padding: 1.625rem 0;
-border-bottom: 1px solid #D8D7CE;
+    display: flex;
+    gap: 1rem;
+    margin: 0 2rem;
+    padding: 1.625rem 0;
+    border-bottom: 1px solid var(--gray-25);
 }
 
 .container li:last-child{
@@ -32,8 +32,8 @@ border-bottom: 1px solid #D8D7CE;
     padding-bottom: 0;
 }
 
-.container p, .title{
-    color: #858479;
+.container p{
+    color: var(--grya-50);
 }
 
 .container h3{
@@ -52,24 +52,28 @@ border-bottom: 1px solid #D8D7CE;
     width: 20%
 }
 
-.mobile, .mobileIcon, .mobileStar{
+.mobile, .mobileIcon, .mobileStar, .mobileForm{
     display: none;
 }
 
 @media screen and (max-width: 320px) {
-    .mobile, .mobileIcon, .mobileStar{
+    .mobile, .mobileIcon, .mobileStar, .mobileForm{
         display: block;
+    }
+
+    .desktop{
+        display: none;
     }
 
     .container li div:nth-child(2){
         width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .mobile{
-        color:  #FFFFFF;
+        color:  var(--white);
         font-size: 1rem;
     }
 
@@ -83,7 +87,9 @@ border-bottom: 1px solid #D8D7CE;
 
     .container li{
         align-items: center;
-        border-bottom: 1px solid #1D1A05;
+        border-bottom: 1px solid var(--gray-100);
+        margin: 0 1rem;
+        padding: 0.6875rem 0;
     }
 
     .container li:nth-child(4) {
@@ -91,22 +97,23 @@ border-bottom: 1px solid #D8D7CE;
     }
 
     .container li:last-child {
-       display: none;
+        display: none;
     }
-
+    
     .container div{
         background-color: transparent;
-        color: #D8D7CE;
+        color: var(--gray-25);
     }
 
     .container ul h2{
-        font-size: 16px;
+        font-size: 1rem;
         padding-bottom: 0;
     }
     
     .container ul h3{
-        color: #858479;
-        font-size: 14px;
+        text-transform: none;
+        color: var(--gray-50);
+        font-size: 0.875rem;
         padding-bottom: 0;
     }
 
@@ -116,10 +123,10 @@ border-bottom: 1px solid #D8D7CE;
 
     .button button{
         width: 100%;
-        border: 2px solid #D8D7CE;
+        border: 2px solid var(--gray-25);
         border-radius: 4px;
         background-color: transparent;
-        color: #D8D7CE;
+        color: var(--gray-25);
         padding: 0.75rem 0.5rem;
     }
 }
