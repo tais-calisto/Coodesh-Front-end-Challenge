@@ -4,7 +4,6 @@
     position: relative;
     z-index: 20;
     position: relative;
-    z-index: 20;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);;
 }
 
@@ -45,7 +44,7 @@
 
 .user p{
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--gray-50);
@@ -76,7 +75,7 @@
     list-style: none;
     text-align: end;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--gray-50);
     cursor: pointer;
@@ -169,7 +168,7 @@
         gap:1.5rem;
         list-style: none;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 0.75rem;
         text-transform: uppercase;
         color: var(--gray-50);
         cursor: pointer;
@@ -185,8 +184,7 @@
         border-top:  1px solid var(--yellow-20);
         border-bottom:  1px solid var(--yellow-20);
         font-weight: 700;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 0.75rem;
         text-transform: uppercase;
         color: var(--gray-100);
     }

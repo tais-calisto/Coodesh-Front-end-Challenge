@@ -9,12 +9,12 @@ const Courses = () => {
         {courses.map((c) => (
           <li key={c._id}>
             <img src={c.image}></img>
-            <section className={style.backdrop}>
+            <div className={style.backdrop}>
               <h4>{c.teacher}</h4>
               <p>
                 enseña <strong>{c.teaches}</strong>
               </p>
-            </section>
+            </div>
           </li>
         ))}
       </ul>

@@ -1,6 +1,5 @@
 .content{
     padding: 2.5rem 0;
-    margin: 0 9.5rem;
     text-align: center;
 }
 
@@ -22,7 +21,6 @@
 
 @media screen and (max-width: 320px) {
     .content{
-        margin: 0 0.5rem;
         padding: 0;
     }
 
@@ -31,15 +29,11 @@
     }
 
     .content li img{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
     }
 
     .content ul{ 
         gap: 1rem;
-    }
-
-    .content p{
-        font-size: 14px;
     }
 }

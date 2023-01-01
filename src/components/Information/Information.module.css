@@ -1,5 +1,4 @@
 .info{
-    margin: 0 9.5rem;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -27,7 +26,6 @@ button{
 
 @media screen and (max-width: 320px) {
     .info{
-        margin: 0 0.3rem;
         margin-bottom: 2.25rem;
         padding: 0;
         grid-template-columns: repeat(2, 1fr);
@@ -48,8 +46,8 @@ button{
     }
 
     .info img{
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         object-fit: cover;
     }
 

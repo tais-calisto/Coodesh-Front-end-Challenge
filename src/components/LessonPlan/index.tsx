@@ -18,7 +18,7 @@ const LessonPlan = () => {
             {lessonPlan.map((lp) => (
               <li key={lp._id}>
                 <div>
-                  <h2>{lp.number}</h2>
+                  <h2 className={style.number}>{lp.number}</h2>
                 </div>
                 <div>
                   <h3>{lp.title}</h3>
@@ -38,18 +38,18 @@ const LessonPlan = () => {
           <Star />
         </div>
       </section>
-      <section className={style.mobileForm}>
+      <div className={style.mobileForm}>
         <Infos />
         <Comments />
         <Courses />
         <Articles />
-      </section>
-      <section className={style.desktop}>
+      </div>
+      <div className={style.desktop}>
         <Courses />
         <Infos />
         <Comments />
         <Articles />
-      </section>
+      </div>
     </>
   );
 };

@@ -19,11 +19,11 @@
 }
 
 .siteLinks li{
-    color: #858479;
+    cursor: pointer;
+    color: var(--gray-50);
     list-style: none;
     font-weight: 400;
     font-size: 0.875rem;
-    line-height: 16px;
 }
 
 .end{
@@ -35,6 +35,19 @@
 
 .mobileTitle, .mobile{
     display: none;
+}
+
+.end p{
+    color: var(--gray-50)
+}
+
+.dolar{
+    color: var(--gray-25);
+}
+
+.currency{
+    display: flex;
+    gap: 1rem
 }
 
 @media screen and (max-width: 320px) {

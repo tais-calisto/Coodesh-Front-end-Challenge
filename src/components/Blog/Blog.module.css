@@ -4,20 +4,16 @@
 }
 
 .contentContainer{
-padding-top: 3.5rem;
-padding-bottom: 4rem;
-color: #FFFFFF;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+    color: var(--white);
 }
 
 .contentContainer h3{
-padding-top: 2.5rem;
-padding-bottom: 4rem;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
     text-align: center;
-    text-transform: uppercase;
-    
 }
 
 .btn{

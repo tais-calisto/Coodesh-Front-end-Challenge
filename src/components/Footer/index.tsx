@@ -38,8 +38,12 @@ const Footer = () => {
           <li>Política de privacidad</li>
           <li>Aviso legal</li>
         </ul>
-        <div>
-          <a href=''>USD ($)</a> / <a href=''>EUR (€)</a>
+        <div className={style.currency}>
+          <a href='' className={style.dolar}>
+            USD ($)
+          </a>{' '}
+          <p>/</p>
+          <a href=''>EUR (€)</a>
         </div>
       </div>
     </footer>
