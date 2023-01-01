@@ -8,6 +8,7 @@ const Courses = () => {
       <ul className={style.courses}>
         {courses.map((c) => (
           <li key={c._id}>
+            <img src={c.image}></img>
             <section className={style.backdrop}>
               <h4>{c.teacher}</h4>
               <p>

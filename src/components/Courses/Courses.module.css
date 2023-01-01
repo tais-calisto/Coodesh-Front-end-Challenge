@@ -11,36 +11,28 @@
 display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 1.5rem;
-height: 11.75rem;
+/* height: 11.75rem; */
 }
 
 .courses li{
     opacity: 0.6;
     background-repeat: no-repeat;
     box-shadow: inset 0px 0px 1px #FFFFFF;
+    position: relative;
 }
 
 .backdrop{
-    height: 100%;
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.9) 100%);
     display: flex;
     flex-direction: column;
-    justify-content:end;
+    justify-content: end;
 }
 
-
-.courses li:first-child {
-    background-image: url('../../assets/courseMarcus.svg');
-   
-}
-.courses li:nth-child(2){
-    background-image: url('../../assets/courseIsmael.svg');
-  
-}
-.courses li:nth-child(3){
-    background-image: url('../../assets/courseLewis.svg');
-}
 
 .courses h4, .courses p {
     text-transform: uppercase;
@@ -64,6 +56,24 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 320px) {
+    .container{
+        margin: 0 0.5rem
+    }
 
+    .courses{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .courses img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .courses li:nth-last-child(2){
+        display: none;
+    }
+}
 
 
