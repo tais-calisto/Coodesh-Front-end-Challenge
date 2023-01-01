@@ -52,12 +52,12 @@ border-bottom: 1px solid #D8D7CE;
     width: 20%
 }
 
-.mobile, .mobileIcon{
+.mobile, .mobileIcon, .mobileStar{
     display: none;
 }
 
 @media screen and (max-width: 320px) {
-    .mobile, .mobileIcon{
+    .mobile, .mobileIcon, .mobileStar{
         display: block;
     }
 

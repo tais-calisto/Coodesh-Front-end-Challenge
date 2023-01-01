@@ -1,6 +1,7 @@
 import style from './LessonPlan.module.css';
 import { lessonPlan } from '../../utils/lessonPlan';
 import iconChevronRight from '../../assets/chevron-right.svg';
+import Star from '../Star';
 
 const LessonPlan = () => {
   return (
@@ -27,6 +28,9 @@ const LessonPlan = () => {
         <div className={style.button}>
           <button className='buttonSecondary'>Ver todos</button>
         </div>
+      </div>
+      <div className={style.mobileStar}>
+        <Star />
       </div>
     </section>
   );
